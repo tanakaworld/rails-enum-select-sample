@@ -18,7 +18,7 @@
 
   <div class="field">
     <%= f.label :gender %>
-    <%= f.select :gender, User.genders.keys.map {|k| [k, k]} %>
+    <%= f.select :gender, User.genders_i18n.keys.map {|k| [User.genders_i18n[k], k]} %>
   </div>
 
   <div class="actions">
